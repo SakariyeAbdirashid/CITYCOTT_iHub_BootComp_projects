@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user_interface web_page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        nav{
+            width: 100%;
+            background-color:#2d4059;
+            padding: 2rem;
+            z-index: 1;
+        top: 0;
+        position: fixed;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        text-transform: capitalize;
+        
+    }
+    a:hover{
+        color:  #1f7a8c;
+    }
+    nav a{
+        margin-left: 1rem;
+        padding: 0 2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    header{
+        background-color:#2d4059;
+        color: white;
+        font-size: 1.1rem;
+        padding-top: 4rem;
+        display: flex;
+        justify-content: center;
+        text-align: left;    
+    }
+
+    header p{
+        font-size: 1.1rem;
+        font-weight:bold;
+        text-align: center;  
+    } 
+    header article ,.left {
+        padding-top: 2rem;
+        
+    }
+    header article , .left{
+        text-align: left;
+        margin-top: 3rem;
+    }
+    
+    .main{
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        gap: 2rem;
+        padding: 2rem;
+        position: relative;
+    }
+    section{
+        margin-top: 1rem;
+        background-color: #ffffff;
+        padding: 3rem;
+        border-radius: .5em;
+        box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+        position: relative;
+        line-height: 1.7rem;
+    }
+
+     h2{
+      border-bottom: 2px solid orange; 
+      margin-bottom: 1rem; 
+      text-transform: capitalize;
+      display: inline-block;
+    }
+    h3{
+        margin: 1rem;
+        text-transform: capitalize;
+    }
+
+    .article h2{
+        margin-bottom: 1rem;
+    }
+    .article ul li a{
+        color:#1f7a8c;
+        font-size: 1.2rem;
+        font-weight:750px;
+    }
+    .article a:hover{
+        color: #2d4059;
+    }
+
+    .skills p span{
+        background-color: #2d4059;
+        color: white;
+        border-radius: .3em;
+        padding: .5rem .7rem;
+        font-size: 1.1rem;
+        
+    }
+    .skills p{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+        row-gap: .6rem;
+    }
+  
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="#">about me</a></li>
+            <li><a href="#">skills</a></li>
+            <li><a href="#">education</a></li>
+            <li><a href="#">exprience</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">articles i wrote</a></li>
+        </ul>
+    </nav>
+    <header>
+        <article> 
+        <p class="left">12345 bosaso,somalia</p>
+        <p class="2">
+            +25290-76666 \ iamskariye@gmail.com
+        </p>
+    </header>
+    </header>
+    <main class="main">
+
+    <section class="about">
+        <h2>about me</h2>
+        <article>
+            I am a passionate software engineer with expertise in full-stack development, specializing in building scalable and efficient web applications. With a strong foundation in front-end and back-end technologies, I am committed to continuous learning and professional growth in the field of software engineering.
+        </article>
+    </section>
+
+    <section class="skills">
+        <h2>skills</h2>
+        <p><span>html</span>
+            <span>css</span>
+            <span>javascript</span>
+            <span>typescript</span>
+            <span>react</span>
+            <span>agile</span>
+            <span>css</span>
+            <span>javascript</span>
+            <span>typescript</span>
+            <span>react</span>
+            <span>agile</span>
+            <span>html</span>
+            <span>css</span>
+            <span>javascript</span>
+            <span>css</span>
+            <span>react</span>
+            <span>typescript</span>
+        </p>
+    </section>
+    <section class="education">
+        <h2>education</h2>
+        <h3>citycot university</h3>
+        <p>January 2022 to May 2023</p>
+        <p>B.S. in Computer Science - Focused on software engineering, data management, and IoT.</p>
+
+    </section>
+    <section class="exprience">
+        <h2>experience</h2>
+        <h3>golis telecom -frontend engineer</h3>
+        <p>March 2022 to Present <style>p{margin: 1rem;}</style></p>
+        <ul type="square">
+            <li>Built web pages using HTML and CSS for simple layouts.</li>
+             <li>Styled components and content for responsive design across devices</li>
+             <li>Assisted in updating website content and fixing layout issues.</li>
+        </ul>
+        <h3>citycot innovation hub -intern</h3>
+        <h4>august 2024 -march 2025</h4>
+        <ul type="square">
+            <li>Developed several basic Android applications</li>
+            <li>Participated in projects and collaborated with a team on frontend design</li>
+            <li>Mentored junior developers and innovation students in foundational programming skills.</li>
+        </ul>
+    </section>
+    <section class="project">
+        <h2>personal porfolia</h2>
+        <ul type="square">
+            <li>Developed a personal portfolio to showcase my work and skills</li>
+            <li>Used HTML, CSS, and JavaScript to create an interactive experience</li>
+        </ul>
+        <h3>Citycot Innovation Hub - Task Manager Project</h3>
+        <ul type="square">
+            <li>Created a task manager application to help students and teams share tasks and collaborate.</li>
+            <li>Designed using HTML, CSS, and JavaScript for a simple and interactive interface.</li>
+        </ul>
+    </section>
+    <section class="article">
+        <h2>Articles I Wrote</h2>
+        <ul>
+            <li><a href="#">the future of web developer</a></li>
+            <li><a href="#">understanding react hooks</a></li>
+        </ul>
+    </section>
+</main>
+
+</body>
+</html>
