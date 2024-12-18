@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_page</title>
+    <style>
+        
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 1rem;
+        }
+        .img span{
+            margin: 0 .5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .empty{
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            border-radius: .5em;
+            margin: 1rem 0;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 1px 0;
+        }
+        .nav ul{
+            display: flex;
+            list-style: none;
+        }
+        .nav ul li{
+
+            margin: 0 1rem;
+        }
+        .nav ul li a{
+            text-decoration: none;
+            padding: 1rem;
+            color: black;
+            font-size: 1.1rem;
+            text-transform: capitalize;
+            margin: 0 1rem;
+        
+        }
+        .title{
+            text-align: center;
+            text-transform: capitalize;
+            margin: 1rem 0;
+            font-style: italic;
+            font-size: 2.5rem;
+        }
+        .sub-title{
+            text-align: center;
+            margin: .5rem 0;
+            margin-bottom: 2rem;
+            text-transform: capitalize;
+            color: #777;
+        }
+     .container-1{
+       border: 2px solid black;
+       display: flex;
+       width: 80%;
+       align-items: center;
+       margin: 0 auto;
+    }
+    .card{
+        width: 300px;
+    height: 170px;
+    border: 1px solid black;
+    border-radius: 2em;
+}
+   .teach{
+    text-transform: capitalize;
+    margin: 2rem 12rem;
+   }
+   
+   .card .text_1{
+       margin: 1rem ;
+    }
+    .card .text_2{
+    text-align: center;
+    margin-top: .5rem;
+    color: #777;
+   }
+
+
+   footer{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 7rem;
+    font-size: 1.1rem;
+   }
+
+   .container-2{
+    display: flex;
+    justify-content: space-between; 
+    width: 80%;
+    margin: 0 auto;
+    
+
+}
+.item h3{
+    text-transform: capitalize;
+    padding: .5rem 2rem;
+}
+.item p{
+    padding: .5rem 2rem;
+}
+.item span{
+    padding: 0 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: red;
+}
+.item ul{
+    margin-left: 2.5rem;
+    line-height: 1.1rem;
+    font-style:inherit;
+}
+.item a{
+    text-decoration: none;
+    text-transform:capitalize;
+    margin-left: 5rem;
+
+}
+.item_2,.item_3,.item_4{
+    padding: .5rem;
+    
+}
+.item_2{
+    border-top: 2px solid black; 
+}
+.item_3{
+    border-top: 2px solid black; 
+    
+    
+}
+.item_4{
+    border-top: 2px solid black; 
+    
+}
+.item_5{
+    border-top: 2px solid black; 
+ 
+}
+.item_6{
+    border-left: 2px solid black;
+    padding: 0;
+}
+.item_7{
+    border-top: 2px solid black;
+}
+
+.item_8{
+
+    border-left: 2px solid black;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="img">
+            <div class="empty"></div>
+            <span>your Name</span>
+        </div>
+        <ul>
+            <li><a href="#">home /</a></li>
+            <li><a href="#">projects /</a></li>
+            <li><a href="#">articles /</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+    
+    <h1 class="title">frontend developer</h1>
+    <p class="sub-title">html only with proper layout, no styling</p>
+    <div class="container-1">
+        <div class="item item_1">
+            <h3>projects</h3>
+            <span>html only portfolia</span>
+            <div class="item item_2">calculator</div>
+            <div class="item item_3">Quiz APP</div>
+            <div class="item item_4">Countdown Timer</div>
+            <div class="item item_5">Product Upcoming Page</div>
+        </div>
+        <div class="item item item_6">
+            <h3>work expreince</h3>
+            <p>roadmap.sh</p>
+            <p>solved all the frontend projects</p>
+            <a href="#">visit my profile</a>
+            <div class="item item_7">
+                <h3>open source work</h3>
+                <p>contributed to 50 opensource projects. <br>
+                   made my own projects with 200 github satrs.</p>
+                   <a href="#">visit my Github profile</a>
+            </div>
+        </div>
+        <div class="item item_8">
+            <h3>education</h3>
+            <p>grauated with 3.76 out of 4 <br>
+               CGPA. Won  acme hackathon.
+               organized 30 sessions. 
+            </p>
+            <span>course i took</span>
+            <ul type="square">
+                <li>hypertext markup-language</li>
+                <li>cascading style-sheet</li>
+                <li>c/c++ languages</li>
+                <li>web developer</li>
+                <li>object oriented programming language</li>
+                <li>data structures and algorithms</li>
+                <li>data structures and algorithms</li>
+            </ul>
+        </div>
+    </div>
+    <h3 class="teach">reviews from my teachers</h3>
+    <div class="container-2">
+    <div class="card">
+        <p class="text_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi possimus cupiditate nihil praesentium delectus!</p>
+        <p class="text_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, facilis.</p>
+    </div>
+    <div class="card">
+        <p class="text_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi possimus cupiditate nihil praesentium delectus!</p>
+        <p class="text_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, facilis.</p>
+    </div>
+    <div class="card">
+        <p class="text_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi possimus cupiditate nihil praesentium delectus!</p>
+        <p class="text_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, facilis.</p>
+    </div>
+</div>
+
+    <footer>
+        <h5>@ all rights reserved 2025</h5>
+    </footer>
+
+</body>
+</html>
