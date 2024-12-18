@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learning_project</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            
+        }
+        body{
+            background-color: hsl(200,100%,96%);
+            height: 200vh;
+    
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .title{
+            text-transform: capitalize;
+            color: white;
+            background-color: rgb(18, 204, 18);;
+            text-align: center;
+            padding: 1rem;
+        }
+        .nav{
+           
+            padding: .5rem;
+            background-color: hsl(0, 2%, 10%);
+        }
+        .nav ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav ul li{
+            padding: .5rem;
+        }
+       .nav  ul li a{
+        color: white;
+        text-transform: capitalize;
+        padding: .5rem;
+
+       }
+
+       .title_2{
+        text-align: center;
+        text-transform: capitalize;
+        padding: .3rem;
+        margin: .5rem 0;
+        font-weight: bold;
+       }
+       .para{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.1rem;
+       }
+
+       .img{
+        margin: 0 50%;
+       }
+
+       .project-list{
+        margin: 2rem 0;
+
+       }
+       .project-list h3{
+        text-transform: capitalize;
+        padding: 1rem 0;
+        font-weight: bold;
+       }
+       table{
+        
+           width: 100%;
+       }
+       .project-list table th {
+       padding: .6rem 0;
+        background-color: rgb(18, 204, 18);
+        color: white;
+        text-transform: capitalize;
+       }
+       .project-list table td{
+        padding: .5rem 2rem;
+        text-transform: capitalize;
+       }
+       .testimo_title{
+        margin: 0 50%;
+        text-transform: capitalize;
+        font-weight: bold;
+
+       }
+       .testimo_para{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        margin: .5rem 0;
+        
+       }
+       .test{
+       
+        text-transform: capitalize;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        
+    }
+    .card{
+        width: 350px;
+        height: 170px;
+        box-shadow: 0 0 5px 0;
+        margin: 3rem 0;
+        padding:0 3rem;
+    }
+    
+    .logo{
+        margin: .5rem 0;
+        }
+    
+    
+       .card p{
+        text-align: left;
+        line-height: 1.3rem;
+        margin-top: .5rem;
+        font-family:Gill Sans;
+       }
+
+       .h2{
+        text-transform: capitalize;
+        padding: .5rem;
+       }
+
+       form input{
+        width: 100%;
+        padding: .5rem;
+        outline: none !important;
+        margin: 1rem 0;
+        border-radius: .5em;
+        transition: all 500ms linear;
+        border: none;
+        
+    }
+    
+    input:hover{
+        border: .5px solid rgb(18, 204, 18);
+    }
+    .btn{
+        padding: .5rem;
+        width: 100%;
+        border-radius: .5em;
+        padding: .5rem;
+        background-color:rgb(18, 204, 18);
+        color: white;
+        outline: none;
+        cursor: pointer;
+        font-size: 1.1rem;
+        text-transform: capitalize;
+
+       }
+       .bnt:hover{
+        background-color: rgb(15, 199, 8,);
+        outline: none;
+       }
+       .texta{
+        width: 100%;
+        margin: .5rem 0;
+        max-height: 50px;
+        max-width: 100%;
+       }
+
+
+       
+      
+
+    </style>
+</head>
+<body>
+    
+        <h1 class="title">html learning projects</h1>
+        <nav class="nav">
+            <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">testimonials</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        </nav>
+        <div class="container">
+        <h2 class="title_2">about this project</h2>
+        <p class="para">thsi project helps srudents learn HTML and CSS by building a functional webpage</p><br>
+        <img class="img" src="log.png" alt="logo"  width="50px" height="50px">
+
+         <br>
+
+         <div class="project-list">
+             <h3>project list</h3>
+             <table border="1px" cellspacing="0" cellpadding="5px">
+                <tr>
+                    <th>project name</th>
+                    <th>description</th>
+                    <th>status</th>
+                </tr>
+                <tr>
+                    <td>portfolia website</td>
+                    <td>showcase your projects and skills</td>
+                    <td>completed</td>
+                </tr>
+                <tr>
+                    <td>personal blog</td>
+                    <td>a simple blogging platform</td>
+                    <td>in progress</td>
+                </tr>
+             </table>
+
+         </div>
+
+         <h2 class="testimo_title">testimonials</h2>
+         <p class="testimo_para"><b>challenge:</b> recreate this grid layout testimonials using HTML and CSS</p>
+         <div class="test">
+            <div class="card card_1">
+                <div class="logo">
+                    <img src="log.png" alt="logo" width="50px" height="50px">
+                </div>
+                <span><b>Reviewer one</b></span>
+                <p>"this project taught me a lot about HTML and CSS. i feel much more confident now!"</p>
+            </div>
+            <div class="card card_2">
+                <div class="logo">
+                    <img src="log.png" alt="logo" width="50px" height="50px">
+                </div>
+                <span><b>Reviewer two</b></span>
+                <p>"a challenge but rewarding expreince, high recommended for begginers."</p>
+            </div>
+            <div class="card card_3">
+                <div class="logo">
+                    <img src="log.png" alt="logo" width="50px" height="50px">
+                </div>
+                <span><b>Reviewer three</b></span>
+                <p>"i was able to create a function web page by the end of this project !"</p>
+            </div>
+         </div>
+         <br>
+         <h2  class="h2">contact me</h2>
+         <form action="form.learn.php" method="post">
+            <label>Name</label><br>
+            <input class="input" type="text" name="name" placeholder="enter your name"><br>
+            <label>Email</label><br>
+            <input class="input" type="email" name="email" placeholder="enter your email"><br>
+            <label>Messege</label><br>
+            <textarea class="texta" placeholder="  enter your feedback"></textarea>
+            <input type="submit" name="send" value="send" class="btn"><br>
+         </form>
+        </div>
+    
+</body>
+</html>
