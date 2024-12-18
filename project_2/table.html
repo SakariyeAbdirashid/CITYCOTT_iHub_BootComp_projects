@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_table</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .title{
+            padding: 1rem;
+            background-color: hsl(1200, 74%, 50%);
+            color: white;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .title_2{
+            text-transform: capitalize;
+            background-color: #ccc;
+            padding: .7rem;
+        }
+
+        .form{
+            margin: 1rem;
+        }
+        .slc{
+            background-color: #ccc;
+        }
+        .title_3{
+            background-color: hsl(120, 74%, 50%);
+            color: white;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .title_4{
+            margin: 0 1rem;
+            text-transform: capitalize;
+
+        }
+        .table{
+            width: 100%;
+            border: 1px solid black;
+        }
+        .table tr td {
+            border: 1px solid black;
+            padding: .5rem;
+        }
+        .table tr{
+            padding: .5rem;
+        }
+        .table th{
+            background-color: hsl(120, 74%, 50%);
+            color: white;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 2rem 0;
+            width: 100%;
+            padding: .5rem;
+
+        }
+     
+    </style>
+</head>
+<body>
+    <h1 class="title">student enrollment form</h1>
+    <form action="index.php" class="form">
+    <h2 class="title_2">enrollment form</h2><br><br>
+    <label for="fullname">Full Name</label><br>
+    <input type="text" name="Full Name" placeholder="enter your name"><br><br>
+    <label for="email">Email</label><br>
+    <input type="email"placeholder="enter your email" required><br>
+    <br><br>
+    
+    <label for="selection">select course</label>
+    <select name="select course" id="course">
+        <option value="HTML Basic">HTML Basic</option>
+        <option value="CSS">CSS</option>
+        <option value="Javascript">Javascript</option>
+        <option value="PHP">PHP</option>
+        <option value="python">python</option>
+    </select>
+    <br><br>
+    <label for="boi">Additional information</label><br>
+    <textarea name="bio" id="bio" rows="5" cols="100"></textarea>
+</form>
+<br><br>
+<h3 class="title_3">submit</h3><br>
+<h2 class="title_4">enrolled students</h2>
+
+    <table class="table">
+        <tr>
+            <th>Student ID</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ayan maxamed</td>
+            <td>ayan@gmail.com</td>
+            <td>HTML BASIC</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>ali nour</td>
+            <td>ali@gamil.com</td>
+            <td>css fundemental</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>sara</td>
+            <td>sara@gamil.com</td>
+            <td>javascript essentail</td>
+        </tr>
+    </table>
+
+    <footer class="footer">@2024 citycothub all right reserved</footer>
+
+</body>
+</html>
