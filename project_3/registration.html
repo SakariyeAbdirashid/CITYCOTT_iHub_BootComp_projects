@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration_form</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .registration{
+            width: 50%;
+            box-shadow:  0 0 5px 1px rgba(0,0,0,.3);
+            margin: 1rem auto
+          
+        }
+        form{
+            margin: 1rem;
+            
+        }
+        label{
+            text-transform: capitalize;
+            font-size: 1.2rem;
+            font-family: arial;
+            
+        }
+        input{
+            margin:1rem 0;
+            width: 100%;
+            border-radius: .3em;
+            padding: .6rem;
+            outline: none;
+            cursor: pointer;
+            border-color: hsl(200,100%,50%);;
+        }
+        input:hover{
+            border-color: hsl(200,100%,50%);
+        }
+        input::placeholder{
+            font-size: 1.1rem;
+            text-transform: capitalize;
+            border-color: hsl(200,100%,50%);
+            color:hsl(200, 49%, 57%);
+        }
+        select{
+            width: 100%;
+            padding: .6rem;
+            border-radius: .3em;
+            border-color: hsl(200,100%,50%);
+            text-transform: capitalize;
+            font-size: 1.01rem;
+            margin: .5rem 0;
+        }
+
+        .btn{
+            width: 100%;
+            border: none;
+            background-color:hsl(200,100%,50%);
+            outline: none;
+            cursor: pointer;
+            border-radius: .3em;
+            padding: .6rem;
+            margin-top: .5rem;
+            text-transform: capitalize;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .btn:hover{
+            background-color: hsl(200, 74%, 44%);
+        }
+        .btn a{
+            text-decoration: none;
+            color: white;
+        }
+
+        table{
+            margin:0 auto;
+            width: 100%;
+            border-color: white;
+        }
+        table th{
+            background-color:hsl(200,100%,50%);
+            color: white;
+            text-transform: capitalize;
+            font-size: 1.1rem;
+            padding: .5rem;
+        }
+        table th:hover{
+            background-color: hsl(200, 76%, 57%);;
+        }
+
+        table td{
+            padding: 1rem;
+            text-transform: capitalize;
+        }
+        table td:hover{
+            background-color: #ccc;
+        }
+        h1{
+            text-transform: capitalize;
+            text-align: center;
+            margin: 1rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="registration">
+        <form action="form.php" method="post">
+            <label>student name:</label><br>
+            <input type="text" placeholder="enter student name"><br>
+            <label>age:</label><br>
+            <input type="number" name="age"><br>
+            <label>email:</label><br>
+            <input type="email" placeholder="enter email"><br>
+            <label>gender:</label><br>
+            <select required>
+                <option value="select gender" disabled selected>select gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select><br>
+            <label>select course:</label><br>
+            <select required>
+                <option value="select course" disabled selected>select course</option>
+                <option value="html/css">html/css</option>
+                <option value="javascript">javascript</option>
+                <option value="pyhton">pyhton</option>
+            </select>
+           <!-- <a href="user_interface.html"><button type="submit" value="save" class="btn">save</button></a> -->
+            <button type="submit" value="save" class="btn"><a href="user_interface.html">save</a></button>
+        </form>
+            <h1>registered students</h1>
+        <table border="1px" cellspacing="0" cellpadding="1px">
+            <tr>
+                <th>student name</th>
+                <th>age</th>
+                <th>eamil</th>
+                <th>phone</th>
+                <th>gender</th>
+                <th>course</th>
+            </tr>
+            <tr>
+                <td>ahmed mohamed</td>
+                <td>20</td>
+                <td>iammahamed@gmail.com</td>
+                <td>+25290****</td>
+                <td>male</td>
+                <td>html & css</td>
+            </tr>
+
+            <tr>
+                <td>aisha fraah</td>
+                <td>22</td>
+                <td>iamaisha@gmai.com</td>
+                <td>+25290****</td>
+                <td>female</td>
+                <td>pyhton</td>
+            </tr>
+
+        </table>
+    </div>
+    
+</body>
+</html>

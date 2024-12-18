@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-page</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hsla(200,100%,50%,.6);
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        h2{
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+        h2:hover{
+            color: rgb(56, 54, 54);
+        }
+
+        .login{
+         width: 600px;
+         box-shadow:  0 0 5px 0 rgba(0,0,0,.3);
+         background-color: hsla(200,100%,50%,.6);
+        
+        }
+
+        form{
+            margin: 1rem;
+            padding: 1rem;
+        }
+        label{
+            text-transform: capitalize;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        input{
+            margin: .5rem 0;
+            padding: .6rem;
+            border-radius: .3em;
+            outline: none;
+            cursor: pointer;
+            width: 60%;
+        }
+        input::placeholder{
+            color: black;
+            text-transform: capitalize;
+        }
+        .box{
+            display: flex;
+            text-align: center;
+            text-transform: capitalize;    
+        }
+        
+           .check{
+            left: 0;
+             width: 60px;
+
+                }
+          .box p{
+            margin: auto 0;
+            font-size: 1.1rem;
+          }    
+          
+          .box a{
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: auto ;
+          }
+          
+          .btn{
+            border: none;
+            width: 30%;
+            padding: .5rem;
+            border-radius: .3em;
+            outline: none;
+            cursor: pointer;
+            color: white;
+            margin:1rem;
+            background-color: blue;
+            text-transform: capitalize;
+        }
+        .btn a{
+            text-decoration: none;
+            color: #ccc;
+            outline: none;
+            font-size: 1.1rem;
+            
+          }
+          .btn:hover{
+            background-color: rgb(56, 56, 222);
+          }
+
+            .not_rg{
+                font-size: 1.1rem;
+                text-transform: capitalize;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            .not_rg a{
+                text-decoration: none;
+                font-size: 1.1rem;
+                color: blue;
+                font-weight: bold;
+                text-transform: capitalize;
+                margin-left: .2rem;
+            }
+
+
+       
+
+
+    </style>
+</head>
+<body>
+
+    <div class="login">
+        <h2>login form</h2>
+        <form action="index.php" method="post">
+            <label>username/email</label><br>
+            <input type="email" placeholder="exampl@gmail.com" required><br>
+            <label>enter password</label><br>
+            <input type="password" placeholder="enter password" required><br>
+            <div class="box">
+                <input type="checkbox" class="check">
+                <p>remember me</p>
+                <a href="#">forget password</a>
+            </div>
+            <button type="submit" value="login" class="btn"> <a href="user_interface.html">login</a> </button><br>
+        </form>
+        <p class="not_rg">not registered? <a href="registration.html">Create account</a> </p>
+
+
+    </div>
+
+    
+</body>
+</html>
