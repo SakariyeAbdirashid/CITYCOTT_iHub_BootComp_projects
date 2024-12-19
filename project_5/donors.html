@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="container-fluid px-3 py-5">
+            <!-- blood donation Registration -->
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title"><strong>Blood Donation Registration</strong></p>
+                </div>
+                <div class="card-body">
+                    <form class="form">
+                        <div class="row g-3 mb-2">
+                            <div class="col-md-4">
+                                <label class="mb-2">Full Name</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-user" style="color: blue;"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Full Name">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="mb-2">Contact</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-phone" style="color: blue;"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Contact Number">
+                                </div> 
+                            </div>
+                            <div class="col-md-4">
+                                <label class="mb-2">Blood group</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-droplet" style="color: blue;"></i></span>
+                                    <select class="form-select">
+                                        <option>A+</option>
+                                        <option>B+</option>
+                                        <option>AB+</option>
+                                        <option>A-</option>
+                                        <option>B-</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-3 mb-2">
+                            <div class="col-md-4">
+                                <label class="mb-2">Age</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-person-cane" style="color: blue;"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Age">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label  class="mb-2">Gender</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-mars-and-venus" style="color: blue;"></i></span>
+                                    <select  class="form-select">
+                                        <option >Male</option>
+                                        <option >Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="mb-2">Donation Date</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-calendar-days" style="color: blue;"></i></span>
+                                    <input type="date" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-3 mb-2">
+                            <div class="col-md-4">
+                                <label class="mb-2">Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-location-dot" style="color: blue;"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Address">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="mb-2">Medical history</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-comments" style="color: blue;"></i></span>
+                                    <textarea class="form-control " placeholder="Describe Medical History" style="height: 5rem;"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="mb-2">Additional Description</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-comment" style="color: blue;"></i></span>
+                                    <textarea class="form-control" placeholder="Enter Additional Details"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-md-3">
+                            <div class="col-md-3 ">
+                                <button class="btn btn-success w-100">Save <i class="fa-solid fa-floppy-disk" style="color: white;margin-left:5px"></i></button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-danger w-100">Delete <i class="fa-solid fa-trash" style="color: white;margin-left:5px"></i></button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-warning w-100">Update <i class="fa-solid fa-pen" style="color: white;margin-left:5px"></i></button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-info w-100">Search <i class="fa-solid fa-magnifying-glass" style="color: white;margin-left:5px"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- list of bloods -->
+
+            <div class="card mt-3">
+                <div class="card-header">
+                    <p class="card-title"><strong>List of Somali Blood Donors</strong></p>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped table-hover">
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Contact</th>
+                            <th>Blood Group</th>
+                            <th>Donation Date</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Ismail Ali</td>
+                            <td>090-12345</td>
+                            <td>A+</td>
+                            <td>2024-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Sakariye abdi</td>
+                            <td>090-65987667</td>
+                            <td>B-</td>
+                            <td>2024-02-14</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Faarax jacac</td>
+                            <td>090-5254826</td>
+                            <td>AB+</td>
+                            <td>2024-09-21</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>caasho geedi</td>
+                            <td>090-7648365</td>
+                            <td>0+</td>
+                            <td>2024-07-25</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>weheliye ahmed</td>
+                            <td>090-8463745</td>
+                            <td>0-</td>
+                            <td>2023-05-17</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>abdiraxman faysal</td>
+                            <td>063-345677</td>
+                            <td>AB-</td>
+                            <td>2023-04-30</td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>warsan dhool</td>
+                            <td>061-6473284</td>
+                            <td>A-</td>
+                            <td>2022-01-19</td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td>kaaho maxmaed</td>
+                            <td>066-526754</td>
+                            <td>0+</td>
+                            <td>2021-06-16</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+     
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
